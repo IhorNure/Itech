@@ -1,0 +1,140 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+    <link href="StyleSheet1.css" rel="stylesheet">
+</head>
+<body>
+    <!--<style type="text/css">
+        body {
+            background-color: #fde97e;
+        }
+    </style>-->
+    <style>
+        f.tnr {
+            font-family: 'Times New Roman', Times, serif;
+            color: brown;
+            font-size: 70px;
+        }
+
+        div#ari {
+            font-family: font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            color: blue;
+            font-size: 35px;
+        }
+    </style>
+    <f class="tnr">    <p>"Test1"</p></f>
+    <div id="ari"><p>"Test2</p></div>
+    <h1 style="color:brown;">"Лабораторная работа №2"</h1>
+    <style>
+        #box1 {
+            position: absolute;
+            top: 100px;
+            left: 200px;
+            background: #ff0000;
+        }
+    </style>
+    <style>
+        #box2 {
+            position: relative;
+            bottom: 100px;
+            left: 200px;
+            background: #4cff00;
+        }
+    </style>
+    <div id="box1">Absolute</div>
+    <div id="box2">Relative</div>
+    <style type="text/css">
+        .fig {
+            float: right; /* Выравнивание рисунка по левому краю */
+            background: #e69f73; /* Цвет фона */
+            padding: 4px; /* Поля вокруг картинки */
+            margin: 0 10px 5px 0; /* Отступы */
+        }
+    </style>
+    <p>
+        <img src="s-l300.jpg" class="fig" / >
+        Motionless in White was founded in 2005 by members Chris Motionless, who played guitar and lead vocals, Angelo Parente on drums, Frank Polumbo on guitar and Kyle White on bass during high school. They incepted many other titles into the group until finally settling on what would be Motionless in White. Chris Motionless and other members have noted bands such as Poison the Well, Slipknot, Marilyn Manson, Johnny Cash, Depeche Mode, and other musical groups as their inspiration. In 2005 they released their self-distributed demo.[2]
+
+        Within the year after the release of their demo, new member Josh Balz was added as the band's keyboardist, Frank Polumbo took over on bass and new members, Michael Costanza and Thomas "TJ" Bell, were added to the band as the new guitarists, moving Chris Motionless solely to lead vocals.[2] the band was discovered by Zach Neil while performing at a local nightclub called The Staircase. Neil signed the band first to management and then later to his record label Masquerade recordings. They recorded their first EP The Whorror which was produced by Zach Neil and mixed by Dan Malsch and released it through Masquerade Recordings/Warner music group in 2007On May 6, 2018, Chris Motionless announced via Instagram that a new record would be released in 2019. He claimed that he, along with Ryan Sitkowski and Ricky Olson, would begin full-time writing prior to touring with Warped Tour that summer.
+
+        Throughout the summer of 2018, the band embarked on the final cross-country run of Vans Warped Tour, spanning from June 21 to August 5, 2018. After the departure of Devin Sola, the band reunited with former guitarist TJ Bell for the tour. Once the tour wrapped, the band took the rest of the year off, with the exception of a few festivals, Halloween shows, and a club show in their hometown of Scranton, to work on the upcoming album. For their final appearances of 2018, Justin Morrow of Ice Nine Kills toured with them on bass guitar.
+    </p>
+    <style>
+        .tab input, .tab-content {
+            display: none;
+        }
+
+        .tab {
+            font: 0.8rem/1.2 Arial, sans-serif; /* Параметры шрифта */
+            border: 1px solid #e9eaec; /* Параметры рамки */
+            border-radius: 3px; /* Скругляем уголки */
+            color: #848994; /* Цвет текста */
+            margin-bottom: 10px; /* Расстояние между пунктами */
+        }
+
+        .tab-title {
+            padding: 10px; /* Поля вокруг текста */
+            display: block; /* Блочный элемент */
+            text-transform: uppercase; /* Все буквы заглавные */
+            font-weight: bold; /* Жирное начертание */
+            cursor: pointer; /* Вид курсора */
+        }
+
+            .tab-title::after {
+                content: '+'; /* Выводим плюс */
+                float: right; /* Размещаем по правому краю */
+            }
+
+        .tab-content {
+            padding: 10px 20px; /* Поля вокруг текста */
+        }
+
+        .tab :checked + .tab-title {
+            background-color: #50a2de; /* Цвет фона */
+            border-radius: 3px 3px 0 0; /* Скругляем уголки */
+            color: #fff; /* Цвет текста */
+        }
+
+            .tab :checked + .tab-title::after {
+                content: '−'; /* Выводим минус */
+            }
+
+        .tab :checked ~ .tab-content {
+            display: block; /* Показываем содержимое */
+        }
+    </style>
+    </head>
+    <body>
+        <div class="accordion">
+            <div class="tab">
+                <input type="checkbox" id="tab1" name="tab-group">
+                <label for="tab1" class="tab-title">Текущий состав</label>
+                <section class="tab-content">
+                    <ul>
+                        <li>Chris Motionless  - lead vocals</li>
+                        <li>Ryan Sitkowski - lead guitar</li>
+                        <li>Ricky Olson - rhythm guitar</li>
+                        <li>Vinny Mauro - drums</li>
+                        <li>Justin Morrow - bass, back vocals</li>
+                    </ul>
+                </section>
+            </div>
+            <div class="tab">
+                <input type="checkbox" id="tab2" name="tab-group">
+                <label for="tab2" class="tab-title">Дискография</label>
+                <section class="tab-content">
+                    <ul>
+                        <li>Creatures (2010)</li>
+                        <li>Infamous (2012)</li>
+                        <li>Reincarnate (2014)</li>
+                        <li>Graveyard Shift (2017)</li>
+                        <li>Disguise (2019)</li>
+                    </ul>
+                </section>
+            </div>
+        </div>
+    </body>
+</html >
